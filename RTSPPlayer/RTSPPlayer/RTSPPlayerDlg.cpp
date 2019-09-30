@@ -332,6 +332,7 @@ int CRTSPPlayerDlg::SDLPlayProc(LPVOID args)
 		SDL_PollEvent(&event);
 	}
 
+	SDL_DestroyRenderer(sdlRenderer);
 	SDL_DestroyTexture(sdlTexture);
 	SDL_Quit();
 
