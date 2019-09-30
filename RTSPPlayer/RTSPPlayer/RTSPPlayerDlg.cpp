@@ -204,6 +204,8 @@ int CRTSPPlayerDlg::SDLPlayProc(LPVOID args)
 	{
 		return -1;
 	}
+	
+	av_dict_free(&opts);
 
 	pFormatCtx->interrupt_callback.opaque = pFormatCtx;
 	if (avformat_find_stream_info(pFormatCtx, NULL) < 0)
@@ -245,6 +247,8 @@ int CRTSPPlayerDlg::SDLPlayProc(LPVOID args)
 	{
 		return -1;
 	}
+	
+	av_dict_free(&optionsDict);
 
 	// Source color format
 	AVPixelFormat src_fix_fmt = pCodexCtx->pix_fmt;
@@ -332,6 +336,7 @@ int CRTSPPlayerDlg::SDLPlayProc(LPVOID args)
 		SDL_PollEvent(&event);
 	}
 
+	SDL_DestroyWindow(sdlWindow);
 	SDL_DestroyRenderer(sdlRenderer);
 	SDL_DestroyTexture(sdlTexture);
 	SDL_Quit();
@@ -344,6 +349,8 @@ int CRTSPPlayerDlg::SDLPlayProc(LPVOID args)
 
 	avcodec_close(pCodexCtx);
 	avformat_close_input(&pFormatCtx);
+	
+	av_free(buffer);
 
 	return 0;
 }
