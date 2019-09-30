@@ -9,7 +9,12 @@
 #define IDR_MAINFRAME                   128
 #define IDC_BUTTON1                     1000
 #define IDC_PLAY                        1000
+#define IDC_BT_FRONT                    1000
 #define IDC_SCREEN                      1001
+#define IDC_BT_LEFT                     1002
+#define IDC_BT_RIGHT                    1003
+#define IDC_BT_REER                     1004
+#define IDC_BT_RECORD                   1005
 
 // Next default values for new objects
 // 

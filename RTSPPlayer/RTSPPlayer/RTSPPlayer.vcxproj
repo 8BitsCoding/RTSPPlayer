@@ -115,11 +115,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\kimtaehyung\Desktop\공유\IPCamerePlayer\ffmpeg-4.1-win64-dev\ffmpeg-4.1-win64-dev\include;C:\Users\kimtaehyung\Desktop\공유\IPCamerePlayer\SDL2-devel-2.0.9-VC\SDL2-2.0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\ffmpeg-4.1-win64-dev\ffmpeg-4.1-win64-dev\include;C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\SDL2-devel-2.0.9-VC\SDL2-2.0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\kimtaehyung\Desktop\공유\IPCamerePlayer\SDL2-devel-2.0.9-VC\SDL2-2.0.9\lib\x64;C:\Users\kimtaehyung\Desktop\공유\IPCamerePlayer\ffmpeg-4.1-win64-dev\ffmpeg-4.1-win64-dev\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\ffmpeg-4.1-win64-dev\ffmpeg-4.1-win64-dev\lib;C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\SDL2-devel-2.0.9-VC\SDL2-2.0.9\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
@@ -161,18 +161,21 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\ffmpeg-4.1-win64-dev\ffmpeg-4.1-win64-dev\include;C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\SDL2-devel-2.0.9-VC\SDL2-2.0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\ffmpeg-4.1-win64-dev\ffmpeg-4.1-win64-dev\lib;C:\Users\Kimtaehyung\Desktop\SW\190626_SW버그수정\usvcon_camera\SDL2-devel-2.0.9-VC\SDL2-2.0.9\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
